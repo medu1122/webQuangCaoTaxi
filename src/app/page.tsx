@@ -25,16 +25,16 @@ export default function Home() {
             GỌI TAXI TAM KỲ? CÓ NGAY SAU 5 PHÚT!
           </h1>
           <p className="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md mb-8">
-            Dịch vụ taxi <strong>Nguyễn Văn Giáp</strong> tại Tam Kỳ, Quảng Nam - An toàn, tin cậy, giá cả phải chăng.
+            Dịch vụ taxi <strong>Trần Văn Giáp</strong> tại Tam Kỳ, Quảng Nam - An toàn, tin cậy, giá cả phải chăng.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 sm:gap-8">
              <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground font-bold text-2xl sm:text-3xl md:text-2xl px-8 sm:px-12 md:px-8 py-4 sm:py-6 md:py-4 shadow-2xl animate-pulse transform scale-105 sm:scale-110 md:scale-100">
-                <a href="tel:0379315159">
-                  <Phone className="mr-3 sm:mr-4 md:mr-3 h-8 w-8 sm:h-12 w-12 md:h-8 w-8" /> Gọi Taxi: 0379315159
+                <a href="tel:0963500547">
+                  <Phone className="mr-3 sm:mr-4 md:mr-3 h-8 w-8 sm:h-12 w-12 md:h-8 w-8" /> Gọi Taxi: 0963500547
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white/95 text-primary hover:bg-white font-bold text-2xl sm:text-3xl md:text-2xl px-8 sm:px-12 md:px-8 py-4 sm:py-6 md:py-4 shadow-2xl border-2 sm:border-4 md:border-2 transform scale-105 sm:scale-110 md:scale-100">
-                <a href="https://zalo.me/0379315159" target="_blank" rel="noopener noreferrer">
+                <a href="https://zalo.me/0963500547" target="_blank" rel="noopener noreferrer">
                   <MessageSquare className="mr-3 sm:mr-4 md:mr-3 h-8 w-8 sm:h-12 w-12 md:h-8 w-8" /> Nhắn Zalo
                 </a>
               </Button>
@@ -102,8 +102,8 @@ export default function Home() {
             Taxi Tam Kỳ – bạn cần là có, bạn gọi là tới!
           </p>
           <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground font-bold text-xl animate-pulse shadow-lg">
-            <a href="tel:0379315159">
-              <Phone className="mr-2 h-6 w-6" /> Gọi ngay: 0379315159
+            <a href="tel:0963500547">
+              <Phone className="mr-2 h-6 w-6" /> Gọi ngay: 0963500547
             </a>
           </Button>
         </section>
@@ -113,7 +113,7 @@ export default function Home() {
         <p className="text-xl font-medium">
           🌟 Hân hạnh phục vụ quý khách tại mọi nẻo đường Quảng Nam – Đà Nẵng 🌟
         </p>
-         <p className="text-sm text-muted-foreground mt-2">© 2024 Taxi Tam Kỳ - Nguyễn Văn Giáp. All rights reserved.</p>
+         <p className="text-sm text-muted-foreground mt-2">© 2024 Taxi Tam Kỳ - Trần Văn Giáp. All rights reserved.</p>
       </footer>
     </div>
   );

@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Taxi Tam Kỳ - Nguyễn Văn Giáp',
-  description: 'Dịch vụ taxi tư nhân tại Tam Kỳ, Quảng Nam. Tài xế Nguyễn Văn Giáp, phục vụ 24/7, an toàn, nhanh chóng, giá cả hợp lý.',
+  title: 'Taxi Tam Kỳ - Trần Văn Giáp',
+  description: 'Dịch vụ taxi tư nhân tại Tam Kỳ, Quảng Nam. Tài xế Trần Văn Giáp, phục vụ 24/7, an toàn, nhanh chóng, giá cả hợp lý.',
 };
 
 export default function RootLayout({
