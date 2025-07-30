@@ -18,7 +18,7 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="z-10 p-4 max-w-4xl relative flex flex-col items-center">
+        <div className="z-20 p-4 max-w-4xl relative flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 tracking-tight drop-shadow-lg">
             GỌI TAXI TAM KỲ? CÓ NGAY SAU 5 PHÚT!
           </h1>
@@ -41,7 +41,7 @@ export default function Home() {
       </header>
 
       <main className="container mx-auto px-4">
-        <section className="bg-card p-4 sm:p-6 rounded-xl shadow-lg -mt-16 z-30 relative mb-12">
+        <section className="bg-card p-4 sm:p-6 rounded-xl shadow-lg -mt-16 z-10 relative mb-12">
            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                 <div className="p-4">
                     <h3 className="text-xl font-bold text-primary">Gọi là có</h3>
