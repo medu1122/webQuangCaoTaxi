@@ -6,17 +6,19 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="bg-background text-foreground font-body">
-      <header className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white overflow-hidden">
+      <header className="relative h-screen md:h-screen flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://storage.googleapis.com/project-os-prod/images/a685f435-0359-4596-8848-83495f464c20.png"
+            src="/images/background2.png"
             alt="Taxi Tam Kỳ"
             data-ai-hint="taxi car sunset"
             fill
-            style={{ objectFit: 'cover' }}
-            className="brightness-[0.8]"
+            style={{ objectFit: 'cover', objectPosition: 'center' }}
+            className="brightness-[1]"
             priority
           />
+          {/* Gradient overlay để tạo hiệu ứng fade chỉ ở phần dưới */}
+          <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#f7f7f7] to-transparent"></div>
         </div>
         <div className="z-20 p-4 max-w-4xl relative flex flex-col items-center">
           <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 tracking-tight drop-shadow-lg">
@@ -25,15 +27,15 @@ export default function Home() {
           <p className="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md mb-8">
             Dịch vụ taxi <strong>Nguyễn Văn Giáp</strong> tại Tam Kỳ, Quảng Nam - An toàn, tin cậy, giá cả phải chăng.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-             <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground font-bold text-lg shadow-xl animate-pulse">
+          <div className="flex flex-col sm:flex-row gap-6 sm:gap-8">
+             <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground font-bold text-2xl sm:text-3xl md:text-2xl px-8 sm:px-12 md:px-8 py-4 sm:py-6 md:py-4 shadow-2xl animate-pulse transform scale-105 sm:scale-110 md:scale-100">
                 <a href="tel:0379315159">
-                  <Phone className="mr-2 h-6 w-6" /> Gọi Taxi: 0379315159
+                  <Phone className="mr-3 sm:mr-4 md:mr-3 h-8 w-8 sm:h-12 w-12 md:h-8 w-8" /> Gọi Taxi: 0379315159
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="bg-white/90 text-primary hover:bg-white font-bold text-lg shadow-xl">
+              <Button asChild size="lg" variant="outline" className="bg-white/95 text-primary hover:bg-white font-bold text-2xl sm:text-3xl md:text-2xl px-8 sm:px-12 md:px-8 py-4 sm:py-6 md:py-4 shadow-2xl border-2 sm:border-4 md:border-2 transform scale-105 sm:scale-110 md:scale-100">
                 <a href="https://zalo.me/0379315159" target="_blank" rel="noopener noreferrer">
-                  <MessageSquare className="mr-2 h-6 w-6" /> Nhắn Zalo
+                  <MessageSquare className="mr-3 sm:mr-4 md:mr-3 h-8 w-8 sm:h-12 w-12 md:h-8 w-8" /> Nhắn Zalo
                 </a>
               </Button>
           </div>
