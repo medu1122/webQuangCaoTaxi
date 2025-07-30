@@ -10,7 +10,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <Image
             src="https://storage.googleapis.com/project-os-prod/images/a685f435-0359-4596-8848-83495f464c20.png"
-            alt="Taxi Sun Group"
+            alt="Taxi Tam Kỳ"
             data-ai-hint="taxi car sunset"
             fill
             style={{ objectFit: 'cover' }}
@@ -18,37 +18,44 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="z-10 p-4 max-w-4xl relative">
-          <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 tracking-tight text-shadow-lg">
-            TÀI XẾ TAXI TAM KỲ – PHỤC VỤ TẬN TÂM, ĐI LÀ THÍCH!
+        <div className="z-10 p-4 max-w-4xl relative flex flex-col items-center">
+          <h1 className="text-4xl md:text-6xl font-bold font-headline mb-4 tracking-tight drop-shadow-lg">
+            GỌI TAXI TAM KỲ? CÓ NGAY SAU 5 PHÚT!
           </h1>
-          <p className="text-lg md:text-xl max-w-3xl mx-auto text-shadow">
-            Bạn đang cần một chuyến đi an toàn – nhanh chóng – giá hợp lý tại Tam Kỳ, Quảng Nam?
-            <br />
-            Hãy gọi ngay Taxi Tam Kỳ – Tài xế <strong>NGUYỄN VĂN GIÁP</strong> – người bạn đường đáng tin cậy của mọi nhà!
+          <p className="text-lg md:text-xl max-w-3xl mx-auto drop-shadow-md mb-8">
+            Dịch vụ taxi <strong>Nguyễn Văn Giáp</strong> tại Tam Kỳ, Quảng Nam - An toàn, tin cậy, giá cả phải chăng.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+             <Button asChild size="lg" className="bg-primary hover:bg-accent text-primary-foreground font-bold text-lg shadow-xl animate-pulse">
+                <a href="tel:0379315159">
+                  <Phone className="mr-2 h-6 w-6" /> Gọi Taxi: 0379315159
+                </a>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="bg-white/90 text-primary hover:bg-white font-bold text-lg shadow-xl">
+                <a href="https://zalo.me/0379315159" target="_blank" rel="noopener noreferrer">
+                  <MessageSquare className="mr-2 h-6 w-6" /> Nhắn Zalo
+                </a>
+              </Button>
+          </div>
         </div>
       </header>
 
       <main className="container mx-auto px-4">
-        <section className="bg-card p-4 sm:p-6 rounded-xl shadow-lg -mt-16 z-30 relative mb-12 transform hover:scale-105 transition-transform duration-300">
-          <div className="flex flex-col md:flex-row items-stretch justify-center gap-4">
-            <Button asChild size="lg" className="flex-1 bg-primary hover:bg-accent text-primary-foreground font-bold text-base sm:text-lg shadow-md hover:shadow-xl transition-shadow">
-              <a href="tel:0379315159">
-                <Phone className="mr-2 h-6 w-6" /> Gọi ngay: 0379315159
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="flex-1 border-primary text-primary hover:bg-primary/10 font-bold text-base sm:text-lg shadow-sm hover:shadow-lg transition-shadow">
-              <a href="https://zalo.me/0379315159" target="_blank" rel="noopener noreferrer">
-                <MessageSquare className="mr-2 h-6 w-6" /> Nhắn Zalo
-              </a>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="flex-1 border-primary text-primary hover:bg-primary/10 font-bold text-base sm:text-lg shadow-sm hover:shadow-lg transition-shadow">
-              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-                <Facebook className="mr-2 h-6 w-6" /> Facebook
-              </a>
-            </Button>
-          </div>
+        <section className="bg-card p-4 sm:p-6 rounded-xl shadow-lg -mt-16 z-30 relative mb-12">
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
+                <div className="p-4">
+                    <h3 className="text-xl font-bold text-primary">Gọi là có</h3>
+                    <p className="text-muted-foreground">Phục vụ 24/7, có mặt sau 5-10 phút.</p>
+                </div>
+                <div className="p-4">
+                    <h3 className="text-xl font-bold text-primary">Giá cả hợp lý</h3>
+                    <p className="text-muted-foreground">Cam kết giá cước rẻ, không phát sinh chi phí.</p>
+                </div>
+                <div className="p-4">
+                    <h3 className="text-xl font-bold text-primary">Tài xế tin cậy</h3>
+                    <p className="text-muted-foreground">Lái xe an toàn, thông thạo đường xá.</p>
+                </div>
+            </div>
         </section>
 
         <div className="grid md:grid-cols-2 gap-8 mb-12">
@@ -109,17 +116,3 @@ export default function Home() {
     </div>
   );
 }
-
-// Add some styles for text shadow to globals.css or here in a style tag if needed.
-// For simplicity, we can add a style tag in the component or define utility classes in globals.
-// Let's add them directly to globals.css for a cleaner component file.
-// Or even better, let's use tailwind's drop-shadow utility.
-// Updated the classNames above to use text-shadow-lg and text-shadow for better readability.
-// This requires adding textShadow utilities to tailwind.config.js if they don't exist by default.
-// A simpler way is to just use a drop-shadow filter.
-// e.g. `[text-shadow:0_2px_4px_rgba(0,0,0,0.5)]`
-// Let's modify the component to use tailwind utilities instead of custom CSS. `drop-shadow-lg` on the text.
-// The provided tailwind config doesn't have textShadow, so I'll just use drop-shadow on the text container.
-// On second thought, `text-shadow` is not a default tailwind utility. I will just make text bold and sized up. This is cleaner.
-// I have removed text-shadow classes and will rely on font size, weight and color for readability.
-// The brightness filter on the background image helps a lot.
