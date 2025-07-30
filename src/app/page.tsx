@@ -41,7 +41,7 @@ export default function Home() {
       </header>
 
       <main className="container mx-auto px-4">
-        <section className="bg-card p-4 sm:p-6 rounded-xl shadow-lg -mt-16 z-10 relative mb-12">
+        <section className="bg-card p-4 sm:p-6 rounded-xl shadow-lg mt-8 mb-12">
            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
                 <div className="p-4">
                     <h3 className="text-xl font-bold text-primary">Gọi là có</h3>
