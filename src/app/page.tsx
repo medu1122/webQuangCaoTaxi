@@ -9,12 +9,12 @@ export default function Home() {
       <header className="relative h-[60vh] md:h-[70vh] flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://placehold.co/1920x1080.png"
-            alt="Đường phố Tam Kỳ về đêm"
-            data-ai-hint="city street night"
+            src="https://storage.googleapis.com/project-os-prod/images/a685f435-0359-4596-8848-83495f464c20.png"
+            alt="Taxi Sun Group"
+            data-ai-hint="taxi car sunset"
             fill
             style={{ objectFit: 'cover' }}
-            className="brightness-[0.4]"
+            className="brightness-[0.8]"
             priority
           />
         </div>
