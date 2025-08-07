@@ -107,6 +107,73 @@ export default function Home() {
             </a>
           </Button>
         </section>
+
+        {/* SEO Keywords Section - Desktop Version */}
+        <section className="hidden md:block bg-gray-50/50 p-6 rounded-lg my-8 border border-gray-100">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-lg font-semibold text-gray-700 mb-4 text-center">
+              Các từ khóa tìm kiếm liên quan:
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-2 text-sm">
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ / taxi tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ giá rẻ / taxi tam ky gia re</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Gọi taxi Tam Kỳ / goi taxi tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Quảng Nam / taxi quang nam</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Trần Văn Giáp / taxi tran van giap</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ 24/7 / taxi tam ky 24/7</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ đi sân bay / taxi tam ky di san bay</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Số điện thoại taxi Tam Kỳ / so dien thoai taxi tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Dịch vụ taxi Tam Kỳ / dich vu taxi tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Đặt taxi Tam Kỳ online / dat taxi tam ky online</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi sân bay Chu Lai / taxi san bay chu lai</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi từ Chu Lai về Tam Kỳ / taxi tu chu lai ve tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ đi Hội An / taxi tam ky di hoi an</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ đi Đà Nẵng / taxi tam ky di da nang</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ đi Núi Thành / taxi tam ky di nui thanh</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ đi Tam Thanh / taxi tam ky di tam thanh</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Quảng Nam đi sân bay / taxi quang nam di san bay</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Đặt xe 4 chỗ Tam Kỳ / dat xe 4 cho tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi nhanh Tam Kỳ / taxi nhanh tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi gia đình Tam Kỳ / taxi gia dinh tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ uy tín / taxi tam ky uy tin</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Giá cước taxi Tam Kỳ / gia cuoc taxi tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Review taxi Tam Kỳ / review taxi tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Cách gọi taxi ở Tam Kỳ / cach goi taxi o tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ có wifi / taxi tam ky co wifi</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi Tam Kỳ có Zalo / taxi tam ky co zalo</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Đặt taxi Tam Kỳ bằng điện thoại / dat taxi tam ky bang dien thoai</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi đường dài Tam Kỳ / taxi duong dai tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Taxi đi tỉnh từ Tam Kỳ / taxi di tinh tu tam ky</div>
+              <div className="text-gray-600 hover:text-primary transition-colors">Thuê xe taxi Tam Kỳ theo giờ / thue xe taxi tam ky theo gio</div>
+            </div>
+          </div>
+        </section>
+
+        {/* SEO Keywords Section - Mobile Version (Collapsible) */}
+        <section className="md:hidden bg-gray-50/30 p-4 rounded-lg my-6 border border-gray-100">
+          <details className="group">
+            <summary className="text-sm font-medium text-gray-700 cursor-pointer list-none flex items-center justify-between">
+              <span>Các từ khóa tìm kiếm liên quan</span>
+              <svg className="w-4 h-4 transform group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </summary>
+            <div className="mt-3 grid grid-cols-1 gap-1 text-xs">
+              <div className="text-gray-600">Taxi Tam Kỳ / taxi tam ky</div>
+              <div className="text-gray-600">Taxi Tam Kỳ giá rẻ / taxi tam ky gia re</div>
+              <div className="text-gray-600">Gọi taxi Tam Kỳ / goi taxi tam ky</div>
+              <div className="text-gray-600">Taxi Quảng Nam / taxi quang nam</div>
+              <div className="text-gray-600">Taxi Trần Văn Giáp / taxi tran van giap</div>
+              <div className="text-gray-600">Taxi Tam Kỳ 24/7 / taxi tam ky 24/7</div>
+              <div className="text-gray-600">Taxi sân bay Chu Lai / taxi san bay chu lai</div>
+              <div className="text-gray-600">Taxi Tam Kỳ đi Hội An / taxi tam ky di hoi an</div>
+              <div className="text-gray-600">Taxi Tam Kỳ đi Đà Nẵng / taxi tam ky di da nang</div>
+              <div className="text-gray-600">Đặt xe 4 chỗ Tam Kỳ / dat xe 4 cho tam ky</div>
+              <div className="text-gray-600">Taxi Tam Kỳ uy tín / taxi tam ky uy tin</div>
+              <div className="text-gray-600">Giá cước taxi Tam Kỳ / gia cuoc taxi tam ky</div>
+            </div>
+          </details>
+        </section>
       </main>
 
       <footer className="text-center py-8 bg-card border-t">
