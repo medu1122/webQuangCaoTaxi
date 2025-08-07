@@ -1,0 +1,28 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://web-quang-cao-taxi.vercel.app/sitemap.xml
+
+# Crawl-delay để tránh quá tải server
+Crawl-delay: 1
+
+# Cho phép Google Bot truy cập tất cả
+User-agent: Googlebot
+Allow: /
+
+# Cho phép Google Bot Images
+User-agent: Googlebot-Image
+Allow: /
+
+# Cho phép Bing Bot
+User-agent: Bingbot
+Allow: /
+
+# Cho phép Facebook Bot
+User-agent: facebookexternalhit
+Allow: /
+
+# Cho phép Twitter Bot
+User-agent: Twitterbot
+Allow: / 
